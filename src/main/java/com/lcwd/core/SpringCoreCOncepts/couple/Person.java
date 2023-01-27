@@ -5,16 +5,17 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Person {
-    @Autowired
+
     Animal animal;
 
+    // cunstructor based injection
+    @Autowired // dependen
     public Person(Animal animal) {
+        System.out.println("calling cinstructo");
         this.animal = animal;
     }
 
-    public void PlayWithAnimal() {
-
-        // using animal
+    public void playWithAnimal() {
         animal.play();
     }
 }

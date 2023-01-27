@@ -16,8 +16,10 @@ public class SpringCoreCOnceptsApplication {
 		// ye line springboot ko start krti h
 
 		ApplicationContext context = SpringApplication.run(SpringCoreCOnceptsApplication.class, args);
-		Person personBean = context.getBean(Person.class);
-		personBean.PlayWithAnimal();
+		Person personBean = context.getBean(Person.class); // automatic constroctor called
+		personBean.playWithAnimal(); // -> play karo cat
+
+		// personBean.PlayWithAnimal();
 
 		// p.PlayWithAnimal();
 	}
