@@ -1,13 +1,8 @@
 package com.lcwd.core.SpringCoreCOncepts.couple;
 
-public class Animal {
+import org.springframework.stereotype.Component;
 
-    public Animal() {
-        System.out.println("creating anumal");
-
-    }
-
-    public void play() {
-        System.out.println("Animal is playing");
-    }
+@Component
+public interface Animal {
+    public void play();
 }
